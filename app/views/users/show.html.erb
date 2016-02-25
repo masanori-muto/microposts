@@ -1,4 +1,45 @@
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
+<div class="col-sm-12">
+  <h1>
+    <%= gravatar_for @user %>
+    <%= @user.name %><br>
+  </h1>
+</div>
+<div class="col-sm-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Email</h3>
+    </div>
+    <div class="panel-body">
+      <p>
+        <%= @user.email %>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Area</h3>
+    </div>
+    <div class="panel-body">
+      <p>
+        <%= @user.area %>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Self introduction</h3>
+    </div>
+    <div class="panel-body">
+      <p>
+        <%= @user.profile %>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
