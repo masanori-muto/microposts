@@ -87,10 +87,6 @@ input, textarea, select, .uneditable-input {
   @include box_sizing;
 }
 
-input.update-button {
-  width: 50%;
-}
-
 input {
   height: auto !important;
 }
@@ -108,4 +104,9 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* 追加分 */
+input.update-button {
+  width: 50%;
 }
