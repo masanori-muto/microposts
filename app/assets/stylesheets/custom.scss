@@ -190,3 +190,10 @@ span.picture {
 input.update-button {
   width: 50%;
 }
+.follow_list {
+  list-style-type: none;
+}
+.follow_list_item {
+  display: inline-block;
+  margin: 15px 0;
+}

@@ -6,6 +6,8 @@
         <%= @user.name %>
       </h1>
     </section>
+    <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> <%= link_to "followings" , users_followings_path %><br>
+    <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> <%= link_to "followers" , users_followers_path %>
   </aside>
   <div class="col-md-8">
     <%= render 'follow_form' if logged_in? %>

@@ -1,0 +1,21 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> <%= link_to "profile" , user_path %>
+  </aside>
+  <div class="col-md-8">
+    <h2>followings</h2>
+    <div class="list-group active follow_list">
+      <% @users.each do |u| %>
+        <a href="#" class="list-group-item clearfix">
+          <%= gravatar_for u %><%= u.name %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>
