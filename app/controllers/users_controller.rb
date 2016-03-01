@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   
   def show # 6.7で追加
     @user = User.find(params[:id])
-    @microposts = @user.microposts.order(created_at: :desc)
+    @microposts = @user.microposts.order(created_at: :desc).page(params[:page]).per(5).order(:id)
+    
+
   end
   
   def new
